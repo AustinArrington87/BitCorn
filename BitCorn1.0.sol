@@ -9,8 +9,6 @@ pragma solidity ^0.4.24;
 // Decimals      : 2
 // Owner Account : 0x33dE1309578F0b8F478F94A323a80abc5903255F
 //
-// Enjoy.
-//
 // (c) by Austin Arrington 2021. MIT Licence.
 // ----------------------------------------------------------------------------
 
