@@ -76,3 +76,5 @@ $ npx hardhat run scripts/deploy.js
 * *Go to https://ropsten.etherscan.io/ and enter contract address*
 * *The From address should match your MetaMask account address*
 * *Click into the transaction and you will see the Contract address in the "To" field*
+
+ #You just deployed your NFT smart contract to the Ethereum chain!
