@@ -17,3 +17,5 @@ $ npm init
 $ npm install --save-dev hardhat
 
 $ npx hardhat
+
+* choose ❯ Create an empty hardhat.config.js *
