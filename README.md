@@ -5,7 +5,7 @@ BitCorn Smart Contracts &amp; Application Code
 $ git clone https://github.com/AustinArrington87/BitCorn.git
 
 $ cd BitCorn/scripts
-* *enter Alchemy API key and MetaMask private key into alchemy.py
+* *enter Alchemy API key and MetaMask private key into alchemy.py*
 
 $ python3 alchemy.py
 
