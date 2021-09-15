@@ -18,4 +18,5 @@ $ npm install --save-dev hardhat
 
 $ npx hardhat
 
+* *Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers when building smart contracts and dApps locally before deploying to the live chain.*
 * *choose ❯ Create an empty hardhat.config.js*
