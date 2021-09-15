@@ -15,3 +15,5 @@ $ cd BitCorn
 $ npm init 
 
 $ npm install --save-dev hardhat
+
+$ npx hardhat
