@@ -3,13 +3,13 @@ import json
 # test get balance with Alchemy composer key https://composer.alchemyapi.io/
 # https://docs.alchemy.com/alchemy/introduction/why-use-alchemy
 # enter API from app from Alchemy UI
-url = 'https://eth-ropsten.alchemyapi.io/v2/T0QVTK9-9Qky6mCT-7Nf7FdTrAb3OWzi'
+url = 'https://eth-ropsten.alchemyapi.io/v2/<enterAPIKey>'
 headers = {'content-type': 'application/json'}
 # enter Address of Metamask Wallet you are getting balance for (test on Ropsten)
 balance = {
     "jsonrpc":"2.0",
     "method":"eth_getBalance",
-    "params":["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"],
+    "params":["<enter Metamask key>", "latest"],
     "id":0
 }
 # get Balance (integer of current balance in Wei)
