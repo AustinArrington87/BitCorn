@@ -73,3 +73,4 @@ $ npx hardhate compile
 
 $ npx hardhat run scripts/deploy.js
 * *Should return Contract deployed to address: etc.*
+* *Go to https://ropsten.etherscan.io/ and enter contract address*
