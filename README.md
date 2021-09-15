@@ -31,6 +31,7 @@ $ npm install @openzeppelin/contracts
 
 $ npm install dotenv --save
 * *create a .env file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it. Format below* 
+
 *API_URL = "https://eth-ropsten.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"*
 *PRIVATE_KEY = "your-metamask-private-key"*
