@@ -38,20 +38,8 @@ $ npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
 
 Update hardhat.config.js file 
 
-/**
-* @type import('hardhat/config').HardhatUserConfig
-*/
-require('dotenv').config();
-require("@nomiclabs/hardhat-ethers");
-const { API_URL, PRIVATE_KEY } = process.env;
-module.exports = {
-   solidity: "0.8.0",
-   defaultNetwork: "ropsten",
-   networks: {
-      hardhat: {},
-      ropsten: {
-         url: API_URL,
-         accounts: [`0x${PRIVATE_KEY}`]
-      }
-   },
-}
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
