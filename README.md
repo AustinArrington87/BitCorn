@@ -70,3 +70,6 @@ module.exports = {
 ```
 
 $ npx hardhate compile
+
+$ npx hardhat run scripts/deploy.js
+* *Should return Contract deployed to address: etc.*
