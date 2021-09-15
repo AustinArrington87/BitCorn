@@ -1,4 +1,5 @@
 # BitCorn
 BitCorn Smart Contracts &amp; Application Code
 
-asdasd
+Test Alchemy API
+git clone https://github.com/AustinArrington87/BitCorn.git
