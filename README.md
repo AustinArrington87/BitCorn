@@ -56,3 +56,5 @@ module.exports = {
    },
 }
 ```
+
+$ npx hardhate compile
