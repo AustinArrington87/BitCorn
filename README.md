@@ -32,3 +32,6 @@ $ npm install @openzeppelin/contracts
 
 $ npm install dotenv --save
 * *create a .env file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it.*
+
+$ npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
+* *Ethers.js is a library that makes it easier to interact and make requests to Ethereum by wrapping standard JSON-RPC methods with more user friendly methods.*
