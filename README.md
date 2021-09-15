@@ -77,4 +77,4 @@ $ npx hardhat run scripts/deploy.js
 * *The From address should match your MetaMask account address*
 * *Click into the transaction and you will see the Contract address in the "To" field*
 
- #You just deployed your NFT smart contract to the Ethereum chain!
+ # You just deployed your NFT smart contract to the Ethereum chain!
