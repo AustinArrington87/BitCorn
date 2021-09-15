@@ -35,3 +35,23 @@ $ npm install dotenv --save
 
 $ npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
 * *Ethers.js is a library that makes it easier to interact and make requests to Ethereum by wrapping standard JSON-RPC methods with more user friendly methods.*
+
+Update hardhat.config.js file 
+
+/**
+* @type import('hardhat/config').HardhatUserConfig
+*/
+require('dotenv').config();
+require("@nomiclabs/hardhat-ethers");
+const { API_URL, PRIVATE_KEY } = process.env;
+module.exports = {
+   solidity: "0.8.0",
+   defaultNetwork: "ropsten",
+   networks: {
+      hardhat: {},
+      ropsten: {
+         url: API_URL,
+         accounts: [`0x${PRIVATE_KEY}`]
+      }
+   },
+}
