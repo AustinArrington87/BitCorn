@@ -20,3 +20,7 @@ $ npx hardhat
 
 * *Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers when building smart contracts and dApps locally before deploying to the live chain.*
 * *choose ❯ Create an empty hardhat.config.js*
+
+$ npm install @openzeppelin/contracts
+
+* *@openzeppelin/contracts/token/ERC721/ERC721.sol contains the implementation of the ERC-721 standard, which our NFT smart contract will inherit. (To be a valid NFT, your smart contract must implement all the methods of the ERC-721 standard.)*
