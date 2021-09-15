@@ -13,7 +13,7 @@ headers = {'content-type': 'application/json'}
 # enter API from app from Alchemy UI - this is for Ropsten test network
 mmWalletAddress = "0x33dE1309578F0b8F478F94A323a80abc5903255F"
 # wallet address from contracts/MyNFT.sol 0xDCfa0E058796cEBA7bbe554eeEf787f66e25ca0A
-# wallet address from token/CORN1.0.sol
+# wallet address from token/CORN1.0.sol 0x33dE1309578F0b8F478F94A323a80abc5903255F
 
 balance = {
     "jsonrpc":"2.0",
@@ -27,7 +27,7 @@ def getBalance(balance):
     #integer of the current balance for the given address in wei.
     wei = balanceInteger.text
     return wei
-
+# convert hexadecimal to int, then wei into ether
 def convertBalance2Int (weiBalance):
     wei = Web3.toInt(hexstr=weiBalance)
     eth = Web3.fromWei(Web3.toInt(hexstr=weiBalance),'ether')
