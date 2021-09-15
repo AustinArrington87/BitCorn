@@ -30,8 +30,4 @@ $ npm install @openzeppelin/contracts
 * *string memory tokenURI is a string that should resolve to a JSON document that describes the NFT's metadata. An NFT's metadata is really what brings it to life, allowing it to have configurable properties, such as a name, description, image, and other attributes. In part 2 of this tutorial, we will describe how to configure this metadata.*
 
 $ npm install dotenv --save
-* *create a .env file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it. Format below* 
-
-* *API_URL = "https://eth-ropsten.alchemyapi.io/v2/your-api-key"
-
-*PRIVATE_KEY = "your-metamask-private-key"*
+* *create a .env file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it.*
