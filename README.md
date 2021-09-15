@@ -74,3 +74,5 @@ $ npx hardhate compile
 $ npx hardhat run scripts/deploy.js
 * *Should return Contract deployed to address: etc.*
 * *Go to https://ropsten.etherscan.io/ and enter contract address*
+* *The From address should match your MetaMask account address*
+* *Click into the transaction and you will see the Contract address in the "To" field*
