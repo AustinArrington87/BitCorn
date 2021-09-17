@@ -78,3 +78,43 @@ $ npx hardhat run scripts/deploy.js
 * *Click into the transaction and you will see the Contract address in the "To" field*
 
  # You just deployed your NFT smart contract to the Ethereum chain!
+
+# Mint NFT - Step 1
+
+$ npm install @alch/alchemy-web3
+* *create mint-nft.js file in /scripts*
+
+$ node scripts/mint-nft.js
+
+# Mint NFT - Step 2
+* *create Pinata account*
+* *Interplanetary File System (IPFS) is a decentralized protocol and peer-to-peer network for storing and sharing data in a distributed file system. We will use Pinata, a convenient IPFS API and toolkit, to store our NFT asset and metadata to ensure our NFT is truly decentralized*
+* *Upload an image *
+* *take the CID (a hash to identify object) and view your image with https://gateway.pinata.cloud/ipfs/<hash-code>
+* *create nft-metadata.json and add your image link and metadata* 
+* *upload JSON metadata into Pinata same as you did with image*
+
+# Mint NFT - Step 3
+* *Go to Etherscan and search address contract was deployed to after Create NFT spot*
+* *It's in the "To:" section of your Etherscan transaction hash*
+* *use web3 contract method to create contract using ABI and contract address in mint-nft.js*
+* *add PUBLIC_KEY to .env file*
+```API_URL = "<alchemy api url>"
+PRIVATE_KEY = "<private key from metamask wallet>"
+PUBLIC_KEY = "<public key from metamask wallet>"
+```
+
+# Mint NFT - Step 4 (Create Transaction)
+* *'from': PUBLIC_KEY*
+* *'to': contractAddress - contract we want to interact with*
+* *'nonce': nonce - number of transactions sent from our address*
+* *'gas': estimatedGas - estimated gas to complete transaction*
+* *'data': nftContract.methods.mintNFT(PUBLIC_KEY, md).encodeABI()
+* * use web3.eth.sendSignedTransaction to sign transaction* 
+
+# Mint NFT - Step 5 (Call MintNFT and run contract)
+* *check your metadata was loaded https://gateway.pinata.cloud/ipfs/metadata-hash-code*
+* *add metadata contract url from Pinata into mintNFT function in mint-nft.js*
+* *run scripts/mint-nft.js and you will get a hash in return 
+* *check Alchemy mempool to check on status of transaction https://dashboard.alchemyapi.io/mempool
+
