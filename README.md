@@ -72,7 +72,7 @@ module.exports = {
 
 $ npx hardhate compile
 
-$ npx hardhat run scripts/deploy.js
+$ npx hardhat run scripts/deploy.js --network ropsten
 * *Should return Contract deployed to address: etc.*
 * *Go to https://ropsten.etherscan.io/ and enter contract address*
 * *The From address should match your MetaMask account address*
