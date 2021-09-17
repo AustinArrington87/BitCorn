@@ -38,7 +38,8 @@ $ npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
 
 Update hardhat.config.js file 
 
-```/**
+```
+/**
  * @type import('hardhat/config').HardhatUserConfig
  */
 require('dotenv').config();
