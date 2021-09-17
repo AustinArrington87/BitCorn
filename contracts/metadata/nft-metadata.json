@@ -1,0 +1,29 @@
+{
+    "attributes": [
+      {
+        "trait_type": "Drought-Tolerance",
+        "value": "High"
+      },
+      {
+        "trait_type": "Pest-Resitance",
+        "value": "High"
+      },
+      {
+        "trait_type": "Fungus-Resistance",
+        "value": "Moderate"
+      },
+      {
+        "trait_type": "Height",
+        "value": "Moderate"
+      },
+      {
+        "trait_type": "Yield",
+        "value": "Moderate-High"
+      }
+    ],
+    "name": "Glass Gem Corn x n-fixer 1",
+    "description": "First generation glass gem x n-fixer seed pack.",
+    "category": "Flint",
+    "lineage": "Bred by part-Cherokee farmer, Carl Barnes, from ancestral, Native American corn",
+    "image": "https://gateway.pinata.cloud/ipfs/QmazqsFdvVBC6CWqm11dqYwmTgP7Kj1ZP2ZpMqYQvZ6kdZ"
+  }
