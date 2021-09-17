@@ -99,7 +99,8 @@ $ node scripts/mint-nft.js
 * *It's in the "To:" section of your Etherscan transaction hash*
 * *use web3 contract method to create contract using ABI and contract address in mint-nft.js*
 * *add PUBLIC_KEY to .env file*
-```API_URL = "<alchemy api url>"
+```
+API_URL = "<alchemy api url>"
 PRIVATE_KEY = "<private key from metamask wallet>"
 PUBLIC_KEY = "<public key from metamask wallet>"
 ```
@@ -117,4 +118,16 @@ PUBLIC_KEY = "<public key from metamask wallet>"
 * *add metadata contract url from Pinata into mintNFT function in mint-nft.js*
 * *run scripts/mint-nft.js and you will get a hash in return 
 * *check Alchemy mempool to check on status of transaction https://dashboard.alchemyapi.io/mempool
+
+
+
+
+
+
+
+
+
+
+
+
 
