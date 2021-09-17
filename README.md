@@ -120,7 +120,9 @@ PUBLIC_KEY = "<public key from metamask wallet>"
 * *check Alchemy mempool to check on status of transaction https://dashboard.alchemyapi.io/mempool
 
 
-
+# Load NFT into your Wallet
+* *Select Ropsten network in Metamask*
+* *grab the Interacted With (to) contract hash and load into NFT section of metamask*
 
 
 
