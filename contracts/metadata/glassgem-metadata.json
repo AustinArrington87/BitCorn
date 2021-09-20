@@ -21,9 +21,13 @@
         "value": "Moderate-High"
       }
     ],
+    "id": "657b3754-19c3-11ec-9621-0242ac130002",
     "name": "Glass Gem Corn x n-fixer 1",
     "description": "First generation glass gem x n-fixer seed pack.",
     "category": "Flint",
     "lineage": "Bred by part-Cherokee farmer, Carl Barnes, from ancestral, Native American corn",
-    "image": "https://gateway.pinata.cloud/ipfs/QmazqsFdvVBC6CWqm11dqYwmTgP7Kj1ZP2ZpMqYQvZ6kdZ"
+    "image": "https://gateway.pinata.cloud/ipfs/QmazqsFdvVBC6CWqm11dqYwmTgP7Kj1ZP2ZpMqYQvZ6kdZ",
+    "seed_ts": 1603179037,
+    "a_shares_ts": 1618903837,
+    "b_shares_ts": null
   }
