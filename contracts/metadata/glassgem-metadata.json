@@ -22,6 +22,7 @@
       }
     ],
     "id": "657b3754-19c3-11ec-9621-0242ac130002",
+    "parent_ids": ["557b3754-19c3-11ec-9621-0242ac130003", "457b3754-19c3-11ec-9621-0242ac130001"],
     "name": "Glass Gem Corn x n-fixer 1",
     "description": "First generation glass gem x n-fixer seed pack.",
     "category": "Flint",
