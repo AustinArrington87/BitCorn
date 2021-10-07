@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BitCorn - Plant Camera</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!--CAMERA APP -->
+
+<!-- partial:index.partial.html -->
+<div id="app" class="web-camera-container">
+  <p>Use the BitCorn Camera to record your plant's progress 
+    from seed to harvest.</p></br>
+  <p>Make sure you have geolocation
+   enabled on your camera, as we will need to store
+   this information on the blockchain to 
+   validate your grow. </p></br>
+  <div class="camera-button">
+      <button type="button" class="button is-rounded" :class="{ 'is-primary' : !isCameraOpen, 'is-danger' : isCameraOpen}" @click="toggleCamera">
+        <span v-if="!isCameraOpen">Open Camera</span>
+        <span v-else>Close Camera</span>
+    </button>
+  </div>
+  
+  <div v-show="isCameraOpen && isLoading" class="camera-loading">
+    <ul class="loader-circle">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  
+  <div v-if="isCameraOpen" v-show="!isLoading" class="camera-box" :class="{ 'flash' : isShotPhoto }">
+    
+    <div class="camera-shutter" :class="{'flash' : isShotPhoto}"></div>
+      
+    <video v-show="!isPhotoTaken" ref="camera" :width="450" :height="337.5" autoplay></video>
+    
+    <canvas v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="450" :height="337.5"></canvas>
+  </div>
+  
+  <div v-if="isCameraOpen && !isLoading" class="camera-shoot">
+    <button type="button" class="button" @click="takePhoto">
+      <img src="https://img.icons8.com/material-outlined/50/000000/camera--v2.png">
+    </button>
+  </div>
+  
+  <div v-if="isPhotoTaken && isCameraOpen" class="camera-download">
+    <a id="downloadPhoto" download="my-photo.jpg" class="button" role="button" @click="downloadImage">
+      Download
+    </a>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
